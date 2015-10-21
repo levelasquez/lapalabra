@@ -10,3 +10,7 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
 ## Versión 0.1
 
 * Bases del proyecto, instalación limpia de Lavarel 5.1
+
+## Versión 0.2
+
+* Creación de las migraciones y base de datos.
