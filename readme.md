@@ -68,3 +68,11 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
   * Article
   * Image
   * Tag
+
+## Versión 0.4
+
+* Creación de las relaciones entre modelos
+  * Uno a Muchos -> Category - Article
+  * Uno a Muchos -> User - Article
+  * Uno a Muchos -> Article - Image
+  * Muchos a Muchos -> Article - Tags
