@@ -36,6 +36,7 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
     * category_id
     * create_at
     * update_at
+    * slug - **Agregado en la versión 0.6**
   * images
     * id
     * name
@@ -83,3 +84,9 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
 * Creación del parcial nav
 * Integración de bootstrap 3.3.5
 * Integración de jQuery 2.1.4
+
+## Versión 0.6
+
+* Agregado nuevo paquete "laravelcollective/html"
+* Agregado nuevo paquete "cviebrock/eloquent-sluggable"
+* Agregada nueva columna a la tabla articles => slug
