@@ -76,3 +76,10 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
   * Uno a Muchos -> User - Article
   * Uno a Muchos -> Article - Image
   * Muchos a Muchos -> Article - Tags
+
+## Versión 0.5
+
+* Creación de la plantilla main
+* Creación del parcial nav
+* Integración de bootstrap 3.3.5
+* Integración de jQuery 2.1.4
