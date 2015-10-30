@@ -5,7 +5,10 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
 
 ### Tecnologías usadas
 
-* Laravel 5.1
+* Laravel 5.1 - **Agregado en la Versión 0.1**
+* MySQL 5.5 - **Agregado en la Versión 0.2**
+* Bootstrap 3.3.5 - **Agregado en la Versión 0.5**
+* Jquery 2.1.4 - **Agregado en la Versión 0.5**
 
 ## Versión 0.1
 
@@ -36,7 +39,7 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
     * category_id
     * create_at
     * update_at
-    * slug - **Agregado en la versión 0.6**
+    * slug - **Agregado en la Versión 0.6**
   * images
     * id
     * name
@@ -90,3 +93,19 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
 * Agregado nuevo paquete "laravelcollective/html"
 * Agregado nuevo paquete "cviebrock/eloquent-sluggable"
 * Agregada nueva columna a la tabla articles => slug
+
+## Versión 0.7
+
+* Agregado grupo de rutas => admin
+* Agregado rutas para Users:
+  ** admin.users.index
+  ** admin.users.store
+  ** admin.users.create
+  ** admin.users.destroy
+  ** admin.users.show
+  ** admin.users.update
+  ** admin.users.edit
+* Agregado controlador => UsersController
+* Agregado vista para crear usuarios => admin.users.create
+* Agregado el campo 'type' en el modelo User => $fillable
+* Ya se pueden crear nuevos usuarios
