@@ -84,7 +84,7 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
 ## Versión 0.5
 
 * Creación de la plantilla main
-* Creación del parcial nav
+* Creación del parcial nav para la plantilla main
 * Integración de bootstrap 3.3.5
 * Integración de jQuery 2.1.4
 
@@ -98,14 +98,20 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
 
 * Agregado grupo de rutas => admin
 * Agregado rutas para Users:
-  ** admin.users.index
-  ** admin.users.store
-  ** admin.users.create
-  ** admin.users.destroy
-  ** admin.users.show
-  ** admin.users.update
-  ** admin.users.edit
+  * admin.users.index
+  * admin.users.store
+  * admin.users.create
+  * admin.users.destroy
+  * admin.users.show
+  * admin.users.update
+  * admin.users.edit
 * Agregado controlador => UsersController
 * Agregado vista para crear usuarios => admin.users.create
 * Agregado el campo 'type' en el modelo User => $fillable
 * Ya se pueden crear nuevos usuarios
+
+## Versión 0.8
+
+* Agregada vista para ver usuarios registrados => admin.users.index
+* Agregada paginación a la lista de usuarios registrados
+* Modificado el parcial nav de la plantilla admin
