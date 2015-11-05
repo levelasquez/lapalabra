@@ -115,3 +115,9 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
 * Agregada vista para ver usuarios registrados => admin.users.index
 * Agregada paginación a la lista de usuarios registrados
 * Modificado el parcial nav de la plantilla admin
+
+## Versión 0.9
+
+* Agregado nuevo paquete "laracasts/flash"
+* Incluido mensajes flash al template admin
+* Agregado mensaje flash al crear usuarios
