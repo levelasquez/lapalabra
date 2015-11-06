@@ -1,7 +1,7 @@
 # La palabra hablada
 ## Blog sobre Tabernáculo cristiano
 
-Blog para la iglesia xx donde se podrá encontrar información relevante a la palabra de Dios.
+Blog para la iglesia **La palabra hablada** donde se podrá encontrar información relevante a la palabra de Dios.
 
 ### Tecnologías usadas
 
@@ -121,3 +121,10 @@ Blog para la iglesia xx donde se podrá encontrar información relevante a la pa
 * Agregado nuevo paquete "laracasts/flash"
 * Incluido mensajes flash al template admin
 * Agregado mensaje flash al crear usuarios
+
+## Versión 1.0
+
+* Agregada opción para eliminar usuarios
+* Agregada nueva ruta para eliminar usuarios con método GET => 'admin.users.destroy'
+* Agregado boton para eliminar usuarios
+* Ya se pueden eliminar usuarios
