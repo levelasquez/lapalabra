@@ -128,3 +128,9 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 * Agregada nueva ruta para eliminar usuarios con método GET => 'admin.users.destroy'
 * Agregado boton para eliminar usuarios
 * Ya se pueden eliminar usuarios
+
+## Versión 1.1
+
+* Agregada opción para editar usuarios
+* Agregado boton para editar usuarios
+* Ya se pueden editar usuarios
