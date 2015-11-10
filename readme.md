@@ -12,7 +12,7 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 
 ## Versión 0.1
 
-* Bases del proyecto, instalación limpia de Lavarel 5.1
+* Bases del proyecto, instalación limpia de 'Lavarel 5.1'
 
 ## Versión 0.2
 
@@ -68,53 +68,53 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 ## Versión 0.3
 
 * Creación de los modelos
-  * Category
-  * Article
-  * Image
-  * Tag
+  * 'Category'
+  * 'Article'
+  * 'Image'
+  * 'Tag'
 
 ## Versión 0.4
 
 * Creación de las relaciones entre modelos
-  * Uno a Muchos -> Category - Article
-  * Uno a Muchos -> User - Article
-  * Uno a Muchos -> Article - Image
-  * Muchos a Muchos -> Article - Tags
+  * Uno a Muchos - 'Category => Article'
+  * Uno a Muchos - 'User => Article'
+  * Uno a Muchos - 'Article => Image'
+  * Muchos a Muchos - 'Article <=> Tags'
 
 ## Versión 0.5
 
-* Creación de la plantilla main
-* Creación del parcial nav para la plantilla main
-* Integración de bootstrap 3.3.5
-* Integración de jQuery 2.1.4
+* Creación de la plantilla => 'admin.template.main'
+* Creación del parcial nav para la plantilla => 'admin.template.main'
+* Integración de 'bootstrap 3.3.5'
+* Integración de 'jQuery 2.1.4'
 
 ## Versión 0.6
 
 * Agregado nuevo paquete "laravelcollective/html"
 * Agregado nuevo paquete "cviebrock/eloquent-sluggable"
-* Agregada nueva columna a la tabla articles => slug
+* Agregada nueva columna a la tabla 'articles' => 'slug'
 
 ## Versión 0.7
 
-* Agregado grupo de rutas => admin
-* Agregado rutas para Users:
-  * admin.users.index
-  * admin.users.store
-  * admin.users.create
-  * admin.users.destroy
-  * admin.users.show
-  * admin.users.update
-  * admin.users.edit
-* Agregado controlador => UsersController
-* Agregado vista para crear usuarios => admin.users.create
-* Agregado el campo 'type' en el modelo User => $fillable
+* Agregado grupo de rutas => 'admin'
+* Agregado rutas para Users en el grupo => 'admin':
+  * 'admin.users.index'
+  * 'admin.users.store'
+  * 'admin.users.create'
+  * 'admin.users.destroy'
+  * 'admin.users.show'
+  * 'admin.users.update'
+  * 'admin.users.edit'
+* Agregado controlador => 'UsersController'
+* Agregado vista para crear usuarios => 'admin.users.create'
+* Agregado el campo 'type' en el modelo 'User' => '$fillable'
 * Ya se pueden crear nuevos usuarios
 
 ## Versión 0.8
 
-* Agregada vista para ver usuarios registrados => admin.users.index
+* Agregada vista para ver usuarios registrados => 'admin.users.index'
 * Agregada paginación a la lista de usuarios registrados
-* Modificado el parcial nav de la plantilla admin
+* Modificado el parcial nav de la plantilla => 'admin.temaplte.main'
 
 ## Versión 0.9
 
@@ -125,7 +125,7 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 ## Versión 1.0
 
 * Agregada opción para eliminar usuarios
-* Agregada nueva ruta para eliminar usuarios con método GET => 'admin.users.destroy'
+* Agregada nueva ruta para eliminar usuarios con método GET en el grupo admin => 'admin.users.destroy'
 * Agregado boton para eliminar usuarios
 * Ya se pueden eliminar usuarios
 
@@ -137,6 +137,28 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 
 ## Versión 1.2
 
-* Agregado UserRequest para validar el registro de usuarios
-* Modificado el controlador UserController para usar el UserRequest
-* Agregado los errores a la vista admin.users.create
+* Agregado 'UserRequest' para validar el registro de usuarios
+* Modificado el controlador 'UserController' para usar el 'UserRequest'
+* Agregado código para mostrar errores a la vista => 'admin.users.create' - **Eliminado en la versión 1.3**
+
+## Versión 1.3
+
+* Refactorizado el metodo UPDATE en el controlador UsersController
+* Agregado rutas para Categories en el grupo => 'admin':
+  * 'admin.categories.index'
+  * 'admin.categories.store'
+  * 'admin.categories.create'
+  * 'admin.categories.destroy'
+  * 'admin.categories.show'
+  * 'admin.categories.update'
+  * 'admin.categories.edit'
+* Agregado controlador => 'CategoriesController'
+* Agregada vista para listar categorias => 'admin.categories.index'
+* Agregada vista para crear categorias => 'admin.categories.create'
+* Agregado 'CategoryRequest' para validar el registro de categorias
+* Ya se puede mostrar y registrar nuevas categorias
+* Agregado nuevo partial para los errores => 'admin.template.partials.errors'
+* Eliminado el codigo para mostrar los errores en la vista => 'admin.users.create'
+* Agregado parcial => 'admin.template.partials.errors' a la plantilla => 'admin.template.main'
+* Agregado footer a la plantilla => 'admin.template.main'
+* Mejorado el diseño y la estetica de la plantilla => 'admin.template.main'

@@ -8,11 +8,27 @@
 <body>
     @include('admin.template.partials.nav')
     <section>
-        @include('flash::message')
-        @yield('content')
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">@yield('title')</h3>
+            </div>
+            <div class="panel-body">
+                @include('flash::message')
+                @include('admin.template.partials.errors')
+                @yield('content')
+            </div>
+        </div>
     </section>
 
     <footer>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <p class="navbar-text">Todos los derechos reservados &copy; {{ date('Y') }}</p>
+                    <p class="navbar-text navbar-right"><b>La Palabra Hablada</b></p>
+                </div>
+            </div>
+        </nav>
     </footer>
 
     <script src="{{ asset('plugins/jquery/js/jquery-2.1.4.js') }}"></script>
