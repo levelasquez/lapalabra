@@ -134,3 +134,9 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 * Agregada opción para editar usuarios
 * Agregado boton para editar usuarios
 * Ya se pueden editar usuarios
+
+## Versión 1.2
+
+* Agregado UserRequest para validar el registro de usuarios
+* Modificado el controlador UserController para usar el UserRequest
+* Agregado los errores a la vista admin.users.create
