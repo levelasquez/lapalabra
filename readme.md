@@ -162,3 +162,16 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 * Agregado parcial => 'admin.template.partials.errors' a la plantilla => 'admin.template.main'
 * Agregado footer a la plantilla => 'admin.template.main'
 * Mejorado el diseño y la estetica de la plantilla => 'admin.template.main'
+
+## Versión 1.4
+
+* Agregado al parcial => 'admin.template.partials.nav' la ruta => 'admin.categories.index'
+* Modificada vista => 'admin.categories.index' - ahora lista las categorias
+* Modificado controlador => 'CategoriesController'
+  * Refactorizado método => 'index'
+  * Creado método => 'edit'
+  * Creado método => 'update'
+  * Creado método => 'destroy'
+* Agregada nueva ruta para eliminar categorias con método GET en el grupo admin => 'admin.categories.destroy'
+* Agregada vista para editar categorias => 'admin.categories.edit'
+* Ya se puede listar, eliminar y editar categorias
