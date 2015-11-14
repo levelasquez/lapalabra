@@ -175,3 +175,9 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 * Agregada nueva ruta para eliminar categorias con método GET en el grupo admin => 'admin.categories.destroy'
 * Agregada vista para editar categorias => 'admin.categories.edit'
 * Ya se puede listar, eliminar y editar categorias
+
+## Versión 1.5
+
+* Agregado paquete de idioma español => 'laraveles/lang-spanish'
+* Traducido al español todos los mensajes del sistema
+* Corregido un error en la base de datos al momento de eliminar una categoria relacionada con un articulo, agregado => '->onDelete('cascade')'
