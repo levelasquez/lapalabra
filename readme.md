@@ -181,3 +181,23 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 * Agregado paquete de idioma español => 'laraveles/lang-spanish'
 * Traducido al español todos los mensajes del sistema
 * Corregido un error en la base de datos al momento de eliminar una categoria relacionada con un articulo, agregado => '->onDelete('cascade')'
+
+## Versión 1.6
+
+* Agregado nuevas rutas:
+  * 'admin.auth.login'
+  * 'admin.auth.logout'
+  * 'admin.index'
+* Agregado middleware => 'auth' al grupo de rutas 'admin'
+* Agregado método => 'getLogin' al controlador 'AuthController'
+* Agregado atributos al controlador => 'AuthController':
+  * redirectPath => '/admin';
+  * loginPath => '/admin/auth/login';
+* Agregada vista para loguearse => 'login.blade.php'
+* Modificado parcial => 'nav.blade.php':
+  * Solo se muestra si esta logueado
+  * Ahora muestra el nombre de usuario en vez de 'Opciones'
+  * Agregada la ruta de logout a la opción salir
+* Cambiada la ruta de redireccionamiento del middleware => 'Authenticate' => 'admin.auth.login'
+* Cambiada la ruta de redireccionamiento del middleware => 'RedirectIfAuthenticated' => 'admin.index'
+* Ya se puede iniciar y cerrar sesión, y el panel administrativo esta restringido a los visitantes.
