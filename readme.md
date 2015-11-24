@@ -201,3 +201,21 @@ Blog para la iglesia **La palabra hablada** donde se podrá encontrar informaci�
 * Cambiada la ruta de redireccionamiento del middleware => 'Authenticate' => 'admin.auth.login'
 * Cambiada la ruta de redireccionamiento del middleware => 'RedirectIfAuthenticated' => 'admin.index'
 * Ya se puede iniciar y cerrar sesión, y el panel administrativo esta restringido a los visitantes.
+
+## Versión 1.7
+
+* Agregado rutas para Tags en el grupo => 'admin':
+  * 'admin.tags.index'
+  * 'admin.tags.store'
+  * 'admin.tags.create'
+  * 'admin.tags.destroy'
+  * 'admin.tags.show'
+  * 'admin.tags.update'
+  * 'admin.tags.edit'
+* Agregado controlador => 'TagsController'
+* Agregada vista para listar tags => 'admin.tags.index'
+* Agregada vista para crear tags => 'admin.tags.create'
+Agregada vista para editar tags => 'admin.tags.edit'
+* Agregado 'TagRequest' para validar el registro de tags
+* Agregada la ruta para tags en el parcial nav => 'admin.tags.index'
+* Ya se puede mostrar, editar, eliminar y registrar nuevas tags
